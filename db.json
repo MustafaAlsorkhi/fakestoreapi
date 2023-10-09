@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "title": "University",
+      "content": "eng",
+      "id": 1
+    },
+    {
+      "title": "Cars",
+      "content": "Dodge RAM",
+      "id": 2
+    },
+    {
+      "title": "Book",
+      "content": "boof=kamrk",
+      "id": 3
+    }
+  ]
+}
