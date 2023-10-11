@@ -261,18 +261,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to handle post update
     function updatePost(e) {
+        let titles=prompt('iii');
+   let titless=prompt('213');
         const postId = e.target.getAttribute("data-id");
 
+   let title = document.getElementById("title").value;
+   let content = document.getElementById("content").value;
+   
         // Fetch the post data by ID (you can implement an update form/modal here)
-        fetch(`http://localhost:3000/posts/${postId}`)
-        .then((response) => response.json())
-        .then((post) => {
-            // Implement logic to update the post (e.g., show a form/modal)
-            // You can update the UI and send a PUT request to the server
-            // to update the post data.
-            // For simplicity, we'll just alert the post data here.
-            alert(`Update post: ${JSON.stringify(post)}`);
-        });
+        fetch(`http://localhost:3000/posts/${postId}`,{
+        method:"put" , 
+      headers:{'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(
+{title:titles , content:titless}
+
+    )
+    })
+        // .then((response) => response.json())
+        // .then((post) => {
+        //     // Implement logic to update the post (e.g., show a form/modal)
+        //     // You can update the UI and send a PUT request to the server
+        //     // to update the post data.
+        //     // For simplicity, we'll just alert the post data here.
+            
+        // });
     }
 
     // Load existing posts from the JSON server on page load
