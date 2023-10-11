@@ -261,8 +261,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to handle post update
     function updatePost(e) {
-        let titles=prompt('iii');
-   let titless=prompt('213');
+        let titles=prompt('Please Enter your title');
+   let titless=prompt('Please Enter your content');
         const postId = e.target.getAttribute("data-id");
 
    let title = document.getElementById("title").value;
@@ -277,7 +277,11 @@ document.addEventListener("DOMContentLoaded", function () {
 {title:titles , content:titless}
 
     )
+    
     })
+    location.reload();
+
+    
         // .then((response) => response.json())
         // .then((post) => {
         //     // Implement logic to update the post (e.g., show a form/modal)

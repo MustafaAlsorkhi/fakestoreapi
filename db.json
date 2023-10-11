@@ -1,19 +1,9 @@
 {
   "posts": [
     {
-      "title": "University",
-      "content": "eng",
+      "title": "Shcool",
+      "content": "Alshamla",
       "id": 1
-    },
-    {
-      "title": "Cars",
-      "content": "Dodge RAM",
-      "id": 2
-    },
-    {
-      "title": "Book",
-      "content": "boof=kamrk",
-      "id": 3
     }
   ]
 }
